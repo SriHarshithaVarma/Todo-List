@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Todo List</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Todo List</h1>
+    <div id="tasks-container">
+        <div id="add-task">
+            <input type="text" id="task-input" placeholder="Enter a task">
+            <input type="date" id="task-date">
+            <div class="option-box">
+                <label>
+                    <input type="radio" name="category" value="urgent" checked> Urgent
+                </label>
+                <div class="divider"></div>
+                <label>
+                    <input type="radio" name="category" value="anytime"> Anytime
+                </label>
+            </div>                   
+            <button id="add-button">Add Task</button>
+        </div>
+        <div class="works-sections-container">
+            <div class="urgent-works-section">
+                <h2>Urgent Works</h2>
+                <ul id="urgent-tasks-list">
+                    <li class="task-container">
+                        <input type="checkbox" class="task-checkbox">
+                        <span class="task-name">Task Name</span>
+                        <span class="task-date">Task Date</span>
+                        <button class="done-button">Done</button>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="anytime-works-section">
+                <h2>Anytime Works</h2>
+                <ul id="anytime-tasks-list">
+                    <li class="task-container">
+                        <input type="checkbox" class="task-checkbox">
+                        <span class="task-name">Task Name</span>
+                        <span class="task-date">Task Date</span>
+                        <button class="done-button">Done</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="completed-works-sections-container">
+            <div class="completed-urgent-works-section">
+                <h2>Completed Urgent Works</h2>
+                <ul id="completed-urgent-tasks-list">
+                    <li class="task-container completed">
+                        <input type="checkbox" class="task-checkbox">
+                        <span class="task-name">Completed Task Name</span>
+                        <span class="task-date">Completed Task Date</span>
+                        <button class="delete-button">Delete</button>
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="completed-anytime-works-section">
+                <h2>Completed Anytime Works</h2>
+                <ul id="completed-anytime-tasks-list">
+                    <li class="task-container completed">
+                        <input type="checkbox" class="task-checkbox">
+                        <span class="task-name">Completed Task Name</span>
+                        <span class="task-date">Completed Task Date</span>
+                        <button class="delete-button">Delete</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,436 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url("../static/todo-bk.jpg");
+    background-size: cover;
+  }
+  
+  @media only screen and (max-width:1024px) {
+    body {
+      font-size: 9.411764705882353px;
+      background-image: url("../static/todo-bk.jpg") no-repeat;
+    }
+  }
+  
+  @media only screen and (max-width:768px) {
+    body {
+      font-size: 10px;
+      background-image: url("../static/todo-bk.jpg") no-repeat;
+    }
+  }
+  
+  @media only screen and (max-width:400px) {
+    body {
+      font-size: 9.411764705882353px;
+      background-image: url("../static/todo-bk.jpg") no-repeat;
+    }
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #494eea;
+  }
+  
+  #tasks-container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    height: auto;
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    #tasks-container {
+      width: auto;
+      height: 1200px;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    #tasks-container {
+      width: auto;
+      height: 1200px;
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    #tasks-container {
+      width: auto;
+      height: 1200px;
+    }
+  }
+  
+  #add-task {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  #add-task input[type="text"],
+  #add-task input[type="date"] {
+    flex: 1;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+  
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    #add-task {
+      flex-direction: column;
+    }
+  
+    #add-task input[type="text"],
+    #add-task input[type="date"] {
+      margin-right: 0;
+      margin-bottom: 10px;
+      width: 80%;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    #add-task {
+      flex-direction: column;
+    }
+  
+    #add-task input[type="text"],
+    #add-task input[type="date"] {
+      margin-right: 0;
+      margin-bottom: 10px;
+      width: 80%;
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    #add-task {
+      flex-direction: column;
+    }
+  
+    #add-task input[type="text"],
+    #add-task input[type="date"] {
+      margin-right: 0;
+      margin-bottom: 10px;
+      width: 80%;
+    }
+  }
+  
+  .option-box {
+    display: flex;
+  }
+  
+  .option-box label {
+    margin-right: 10px;
+  }
+  
+  @media only screen and (max-width:1024px) {
+    .option-box label {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media only screen and (max-width:768px) {
+    .option-box label {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media only screen and (max-width:400px) {
+    .option-box label {
+      margin-bottom: 20px;
+    }
+  }
+  
+  .divider {
+    width: 8px;
+    margin: 0 5px;
+  }
+  
+  #add-button {
+    padding: 8px 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  @media only screen and (max-width:1024px) {
+    #add-button {
+      width: 50%
+    }
+  }
+  
+  @media only screen and (max-width:768px) {
+    #add-button {
+      width: 50%
+    }
+  }
+  
+  @media only screen and (max-width:400px) {
+    #add-button {
+      width: 50%
+    }
+  }
+  
+  .works-sections-container {
+    display: flex;
+    justify-content: space-between;
+    height: 220px;
+  }
+  
+  .urgent-works-section,
+  .anytime-works-section {
+    flex: 1;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /*background-color: rgba(255, 255, 255, 0.5);*/
+    border-radius: 4px;
+    margin-top: 20px;
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .works-sections-container {
+      flex-direction: column;
+      align-items: flex-start;
+      height: 480px;
+    }
+  
+    .urgent-works-section,
+    .anytime-works-section {
+      height: 220px
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .works-sections-container {
+      flex-direction: column;
+      align-items: flex-start;
+      height: 480px;
+    }
+  
+    .urgent-works-section,
+    .anytime-works-section {
+      height: 220px
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .works-sections-container {
+      flex-direction: column;
+      align-items: flex-start;
+      height: 480px;
+    }
+  
+    .urgent-works-section,
+    .anytime-works-section {
+      height: 220px
+    }
+  }
+  
+  
+  .completed-works-sections-container {
+    display: flex;
+    justify-content: space-between;
+    height: 220px;
+  }
+  
+  .completed-urgent-works-section,
+  .completed-anytime-works-section {
+    flex: 1;
+    padding: 10px;
+    /*background-color: rgba(255, 255, 255, 0.5);*/
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    margin-top: 20px;
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .completed-works-sections-container {
+      flex-direction: column;
+      align-items: flex-start;
+      height: 480px;
+    }
+  
+    .completed-urgent-works-section,
+    .completed-anytime-works-section {
+      height: 220px;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .completed-works-sections-container {
+      flex-direction: column;
+      align-items: flex-start;
+      height: 480px;
+    }
+  
+    .completed-urgent-works-section,
+    .completed-anytime-works-section {
+      height: 220px;
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .completed-works-sections-container {
+      flex-direction: column;
+      align-items: flex-start;
+      height: 480px;
+    }
+  
+    .completed-urgent-works-section,
+    .completed-anytime-works-section {
+      height: 220px;
+    }
+  }
+  
+  .urgent-works-section h2,
+  .anytime-works-section h2,
+  .completed-urgent-works-section h2,
+  .completed-anytime-works-section h2 {
+    margin-top: 0;
+    color: #494eea;
+  }
+  
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .task-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .task-checkbox,
+  .task-name {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .task-date {
+    color: #888;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+  }
+  
+  .done-button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    float: right;
+  }
+  
+  .delete-button {
+    padding: 5px 10px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    float: right;
+    margin: 0 0;
+  }
+  
+  .space {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  #add-task input[type="text"],
+  #add-task input[type="date"],
+  #add-button {
+    outline: none;
+  }
+  
+  #add-task input[type="text"]:focus,
+  #add-task input[type="date"]:focus,
+  #add-button:focus {
+    box-shadow: 0 0 0 2px #4caf50;
+    border: #4caf50;
+  }
+  
+  #add-button:hover {
+    background-color: #28d531;
+  }
+  
+  .completed-works-sections-container ul {
+    gap: 20px;
+  }
+  
+  .completed-works-sections-container {
+    flex-wrap: wrap;
+  }
+  
+  .completed-urgent-works-section,
+  .completed-anytime-works-section {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .completed-works-sections-container h2 {
+    margin-bottom: 10px;
+  }
+  
+  .completed-works-sections-container li {
+    margin-bottom: 10px;
+  }
+  
+  .works-sections-container ul {
+    gap: 20px;
+  }
+  
+  .works-sections-container {
+    flex-wrap: wrap;
+  }
+  
+  .urgent-works-section,
+  .anytime-works-section {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .works-sections-container h2 {
+    margin-bottom: 10px;
+  }
+  
+  .works-sections-container li {
+    margin-bottom: 10px;
+  }
+  
+  .done-button:hover {
+    background-color: #4e9ef3;
+  }
+  
+  .delete-button:hover {
+    background-color: #f85252;
+  }
+  
+  .urgent-works-section ul,
+  .anytime-works-section ul,
+  .completed-urgent-works-section ul,
+  .completed-anytime-works-section ul {
+    max-height: 150px;
+    overflow-y: auto;
+    padding-right: 10px;
+  }
